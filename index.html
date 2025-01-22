@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - About Us</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,7 +31,7 @@
         <a href="#" class="btn play-video">Play Video ▶</a>
       </div>
       <div class="hero-stats">
-        <span>1923 Workshops Conducted</span>
+        <span>1923 Workshops Conducted------</span>
         <span>5840 Donations Collected</span>
       </div>
     </div>
@@ -65,5 +67,124 @@
       </div>
     </div>
   </section>
+  <section class="what-we-do">
+    <div class="container">
+      <div class="what-we-do-text">
+        <h3>What We Do</h3>
+        <h1>We organize events and awareness sessions</h1>
+        <p>
+          Works for the development of the basin in the Varanasi region of UP,
+          helping in education, health, and finance.
+        </p>
+        <div class="activities">
+          <div class="activity">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <div>
+              <h3>Conducts Workshops</h3>
+              <p>
+                Initiating skill development programs (for men and women) and organizing
+                leadership/personality development programs, making them aware of
+                government schemes, scholarships, and health.
+              </p>
+            </div>
+          </div>
+          <div class="activity">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <div>
+              <h3>Skills Training</h3>
+              <p>
+                Facilitating power through the generation of development opportunities,
+                income-generating activities, providing skill-based training, and
+                imparting new technology in agriculture, etc.
+              </p>
+            </div>
+          </div>
+          <div class="activity">
+            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+            <div>
+              <h3>Activities and Awareness Camps</h3>
+              <p>
+                Development of women and rural folks socially, economically, and politically
+                through income-generating activities, education programs, and awareness camps.
+              </p>
+            </div>
+          </div>
+          <div class="activity">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h3>Runs Educational Programmes</h3>
+              <p>
+                Running educational programs like formal education, non-formal education,
+                and adult education programs to decrease illiteracy and improve
+                human resources for the development of a nation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what-we-do-image">
+        <img src="img/children.jpg" alt="What We Do">
+      </div>
+    </div>
+  </section>
+  <section class="projects-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="text-content">
+        <h3>Projects We Have Done</h3>
+        <h1>We are Creating sustainable developed society, for everyone and forever.</h1>
+      </div>
+      <!-- Project Cards -->
+      <div class="projects-cards">
+        <div class="project-card" style="background-image: url('img/children.jpg');">
+          <div class="project-content">
+            <h3>Mission: Developed Villages</h3>
+            <p>Organized drives and events for delivering services at a faster pace.</p>
+            <a href="#" class="btn">See more</a>
+          </div>
+        </div>
+        <div class="project-card" style="background-image: url('img/children.jpg');">
+          <div class="project-content">
+            <h3>Weekly Workshop programs in city</h3>
+            <p>Conducted central workshops for training people on government schemes, scholarships, and health.</p>
+            <a href="#" class="btn">See more</a>
+          </div>
+        </div>
+        <div class="project-card" style="background-image: url('img/children.jpg');">
+          <div class="project-content">
+            <h3>Education Awareness Program 2023</h3>
+            <p>Organized several educational awareness programs in almost every village of Kalith region.</p>
+            <a href="#" class="btn">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="donation-overview">
+
+    <div class="container">
+      <!-- Left Content -->
+      <div class="donation-text">
+        <h2>How we spend your donations and where it goes</h2>
+        <p>
+          We understand that when you make a donation, you want to know exactly where your money is going, and we pledge to be transparent.
+        </p>
+        <ul>
+          <li><span style="background-color: #A7F3D0;"></span> 40% Organizing Events</li>
+          <li><span style="background-color: #C4B5FD;"></span> 35% Skills Training</li>
+          <li><span style="background-color: #FEF08A;"></span> 10% Helping people</li>
+          <li><span style="background-color: #FBCFE8;"></span> 5% Feeding the poor</li>
+          <li><span style="background-color: #FDE68A;"></span> 10% Human safety</li>
+        </ul>
+      </div>
+      
+      <!-- Right Content -->
+      <div class="donation-chart">
+        <!-- <img src="img/donation-chart.png" alt="Donation Chart" /> -->
+        <canvas id="donationChart" width="400" height="400"></canvas>
+      </div>
+    </div>
+  </section>
+  <script src="scripts.js"></script>
 </body>
 </html>
