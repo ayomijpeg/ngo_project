@@ -4,9 +4,6 @@ body, h1, h2, h3, p, ul {
     padding: 0;
 }
 
-body {
-    font-family: sans-serif;
-}
 
 .container {
     max-width: 1200px;
@@ -14,48 +11,83 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styling */
+/* Header Styles */
 header {
-    padding: 20px 0;
-    border-bottom: 1px solid lightgray;
+  background-color: #f8f8f8; /* Optional: Light background color */
+  padding: 1rem 0; /* Adjust padding as needed */
+  /* Add shadow for visual separation */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  padding: 0 2rem;  /* Add padding to sides of header */
 }
+
+
+
 .logo img {
-    height: 50px; 
+  height: 40px; /* Adjust logo height */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem; /* Add some space between list items */
 }
+
 
 nav ul li a {
-    text-decoration: none;
-    color: #444;
-    margin-left: 20px;
-}
-nav ul li a:hover {
-    color: #222;
-    text-decoration: underline;
+  text-decoration: none;
+  color: black; /* Changed to black */
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.donate-button {
-    background-color: #6a0dad;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+nav ul li a:hover {
+  color: #6a0dad; /* Change color on hover */
 }
-.donate-button:hover{
-    background-color:#6a0dad;
+
+
+.donate-button {
+  display: inline-block; /* Makes the button an inline element so padding works */
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem; /* Adjust padding */
+  border-radius: 5px;
+  text-decoration: none; /* Removes underline if it's a link */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #55008f; /* Darker purple on hover */
+}
+
+
+/* Add responsive styles if needed */
+@media (max-width: 768px) {  /* Adjust breakpoint as needed */
+  .navbar {
+      flex-direction: column; /* Stack navbar items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text within the navbar */
+  }
+  nav ul {
+    flex-direction: column; /* Stack nav links vertically */
+    margin-top: 1rem; /* Space nav links from logo */
+
+  }
+  .donate-button {
+      margin-top: 1rem; /* Add space above the donate button */
+  }
+
 }
 
 /* Hero Section Styling */
