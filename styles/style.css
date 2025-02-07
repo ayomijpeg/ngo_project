@@ -96,7 +96,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: #f0f0f0;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .hero-stats span {
@@ -127,6 +127,16 @@ body {
 .play-video:hover {
     background: #e0e0e0;
     color: #333;
+}
+.crump{
+   display: flex;
+   align-items: center;
+   
+   
+}
+.line{
+  width:250px;
+  margin: 5px;
 }
 
 /* About Section */
@@ -537,7 +547,7 @@ body {
 /*Cta section*/
 .cta-section {
   position: relative;
-  background-image: url('img/children.jpg'); /* Replace with the actual image path */
+  background-image: url('/img/children.jpg'); /* Replace with the actual image path */
   background-size: cover;
   background-position: center;
   height: 280px;
