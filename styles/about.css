@@ -171,7 +171,7 @@ nav ul li a:hover {
    } */
    .video-placeholder {
     position: relative;
-    width: 100%;
+    width: 1200px;
     max-width: 1200px; 
     height: 400px; 
     margin: 0 auto;
@@ -223,19 +223,13 @@ nav ul li a:hover {
     }
     
 }
-.cta-overlay {
-  text-align: center;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  border-radius: 10px;
-}
+/*Volunteer section*/
 .cta-section {
   position: relative;
-  background-image: url('img/children.jpg'); /* Replace with the actual image path */
+  background-image: url('/img/volunteer.png'); /* Replace with the actual image path */
   background-size: cover;
   background-position: center;
-  height: 270px;
+  height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,10 +239,23 @@ nav ul li a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+/* Overlay effect */
+.cta-overlay {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  height: 236px;
+  width: 1510px;
+}
 /* Headline styling */
+
 .cta-overlay h1 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
+  margin-top: 56px;
 }
 
 /* Buttons container */
@@ -433,6 +440,9 @@ nav ul li a:hover {
     text-align: center;
     padding: 2rem 0;
   }
+  .awards h2{
+   margin-bottom: 28px;
+  }
   
   .awards-container {
     display: flex;
@@ -457,6 +467,12 @@ nav ul li a:hover {
     width: 60px; /* Ensure consistent icon size */
     height: auto;
     margin-bottom: 1rem;
+  }
+  .award-img{
+    display: flex;
+        justify-content: space-around;
+        margin: 38px;
+    
   }
   
   .award-details p {
@@ -575,6 +591,18 @@ nav ul li a:hover {
 .team h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  position:relative;
+}
+.team h2::before {
+  content: '';
+  /* border: 1px solid black; */
+  background: rgba(0, 0, 0, 1);
+  width: 448px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .team-grid {

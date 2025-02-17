@@ -8,7 +8,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-     background: url('/img/istockphoto-1482584637-612x612.webp') no-repeat center center/cover; 
+     background: url('/img/BG\ Image.png') no-repeat center center/cover; 
     height: 100vh;
     color: bla;
     position: relative;
@@ -24,6 +24,7 @@ body {
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;
 }
 
 .navbar ul {
@@ -73,6 +74,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
+    color: white;
 }
 
 .hero-container p {
@@ -534,9 +536,8 @@ body {
 .donation-chart {
   flex: 1;
   text-align: center;
-  height: 500px;
-  width: 100px;
-
+  height: 399px;
+    width: 89px;
 }
 
 .donation-chart img {
@@ -547,7 +548,7 @@ body {
 /*Cta section*/
 .cta-section {
   position: relative;
-  background-image: url('/img/children.jpg'); /* Replace with the actual image path */
+  background-image: url('/img/volunteer.png'); /* Replace with the actual image path */
   background-size: cover;
   background-position: center;
   height: 280px;
@@ -565,15 +566,18 @@ body {
 .cta-overlay {
   text-align: center;
   color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
+  height: 236px;
+  width: 1510px;
 }
-
 /* Headline styling */
+
 .cta-overlay h1 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
+  margin-top: 56px;
 }
 
 /* Buttons container */
