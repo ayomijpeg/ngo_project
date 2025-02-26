@@ -253,6 +253,161 @@ header {
   background-color: #fff;
   color: #333;
 }
+/*Cta section*/
+.cta-section {
+position: relative;
+background-image: url('/img/volunteer.png'); /* Replace with the actual image path */
+background-size: cover;
+background-position: center;
+height: 280px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+margin: 20px auto;
+max-width: 1100px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+
+/* Overlay effect */
+.cta-overlay {
+text-align: center;
+color: #fff;
+background: rgba(0, 0, 0, 0.6);
+padding: 20px;
+border-radius: 15px;
+height: 236px;
+width: 1510px;
+}
+/* Headline styling */
+
+.cta-overlay h1 {
+font-size: 2rem;
+margin-bottom: 36px;
+margin-top: 56px;
+}
+
+/* Buttons container */
+.cta-buttons {
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
+/* Button styling */
+.cta-button {
+text-decoration: none;
+font-size: 1rem;
+padding: 10px 20px;
+border-radius: 5px;
+background-color: #fff; 
+background-color: #fff; /* Primary blue color */
+color: #0e0d0d;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+background-color: #0056b3; 
+background-color: #0056b3; /* Darker blue on hover */
+transform: scale(1.05);
+}
+
+/* Donate button specific styling */
+.cta-donate {
+background-color: #fff; 
+}
+
+.cta-donate:hover {
+background-color: #1e7e34; 
+background-color: #fff; /* Green color */
+}
+.cta-donate:hover {
+background-color: #1e7e34; /* Darker green on hover */
+
+}
+/*footer stlyes*/
+.footer {
+background-color: #f7f7fc;
+padding: 30px 20px;
+text-align: center;
+}
+
+.footer-content {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.social-icons a img {
+width: 24px;
+height: 24px;
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 50px;
+margin-bottom: 20px;
+text-align: left;
+}
+
+.footer-column {
+min-width: 150px;
+}
+
+.footer-column h4 {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.footer-column ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-column ul li {
+margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+text-decoration: none;
+color: #333;
+font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+text-decoration: underline;
+}
+
+.subscribe-section {
+text-align: center;
+margin-top: 20px;
+}
+
+.subscribe-section h4 {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.subscribe-section p {
+background-color: #333;
+color: #fff;
+display: inline-block;
+padding: 10px 20px;
+border-radius: 20px;
+margin-bottom: 5px;
+}
+
+.subscribe-section span {
+color: #666;
+font-size: 14px;
+}
 
 
