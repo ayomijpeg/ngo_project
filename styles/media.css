@@ -56,17 +56,17 @@ header {
 }
 
 .donate-btn {
-    background-color: rgba(151, 71, 255, 1);
-    color: #ffffff;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: background-color 0.3s ease;
+  background-color: rgb(34, 34, 34);
+  color: #fff !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
 }
 
 .donate-btn:hover {
-    background-color: #14131f;
+  background-color: rgba(151, 71, 255, 1);
 }
 /*Media section style*/
 .media-section {
@@ -104,7 +104,7 @@ header {
 .media-left hr {
     border: none;
     height: 2px;
-    background-color: #1A237E;
+    background-color: rgba(29, 33, 48, 1);
     width: 50px;
     margin: 0;
 }
@@ -218,6 +218,7 @@ header {
       color: #555;
       text-transform: uppercase;
       letter-spacing: 2px;
+      line-height: 56px;
       margin-bottom: 1rem;
   }
   
@@ -225,14 +226,21 @@ header {
   .news-section {
     max-width: 1200px;
     margin: 0 auto;
+    margin-left: 110px;
     padding: 20px;
   }
+  .news-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   .news-section hr {
-      border: none;
-      height: 2px;
-      background-color: #1A237E;
-      width: 50px;
-      margin: 0;
+    border: none;
+    height: 2px;
+    background-color: rgba(29, 33, 48, 1)E;
+    width: 1000px;
+    margin: 0;
+    margin-top: 0;
   }
   .news-container {
     display: grid;
@@ -255,6 +263,11 @@ header {
     height: 150px;
     object-fit: cover;
   }
+  .news-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   
   .news-card h3 {
     font-size: 1.2rem;
@@ -276,15 +289,30 @@ header {
 .events-section {
     padding: 2rem;
     text-align: left;
+    margin-left: 110px;
   }
   
-  .events-section h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+  .event-line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.event-line hr{
+    border: none;
+    height: 2px;
+    background-color: rgba(29, 33, 48, 1);
+    width: 1000px;
+    margin: 0;
+    margin-top: 0;
+}
+.events-section h2 {
+  font-size: 1rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 56px;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #000;
-    display: inline-block;
-  }
+}
   
   .events-container {
     display: flex; /* Use flexbox to align cards horizontally */

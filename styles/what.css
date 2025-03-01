@@ -37,9 +37,10 @@
 .what hr {
     border: none;
     height: 2px;
-    background-color: #1A237E;
+    background-color: rgba(29, 33, 48, 1);
     width: 50px;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 
@@ -389,13 +390,20 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  margin-left: 110px;
+}
+.news-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .news-section hr {
-    border: none;
-    height: 2px;
-    background-color: #1A237E;
-    width: 50px;
-    margin: 0;
+  border: none;
+  height: 2px;
+  background-color:rgba(29, 33, 48, 1);
+  width: 1000px;
+  margin: 0;
+  margin-bottom: 0px;
 }
 
 .news-container {
@@ -440,14 +448,30 @@
 .events-section {
   padding: 2rem;
   text-align: left;
+  margin-left: 110px;
+}
+
+.event-line{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.event-line hr{
+  border: none;
+  height: 2px;
+  background-color: rgba(29, 33, 48, 1);
+  width: 1000px;
+  margin: 0;
+  margin-bottom: 0px;
 }
 
 .events-section h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #000;
-  display: inline-block;
+  font-size: 1rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 56px;
+    margin-bottom: 1rem;
 }
 
 .events-container {

@@ -288,7 +288,13 @@ nav ul li a:hover {
     color: #555;
     text-transform: uppercase;
     letter-spacing: 2px;
+    line-height: 56px;
     margin-bottom: 1rem;
+}
+.news-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* News Section */
@@ -298,11 +304,12 @@ nav ul li a:hover {
   padding: 20px;
 }
 .news-section hr {
-    border: none;
-    height: 2px;
-    background-color: #1A237E;
-    width: 50px;
-    margin: 0;
+  border: none;
+  height: 2px;
+  background-color: #1A237E;
+  width: 1000px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 .news-container {
   display: grid;
@@ -661,15 +668,38 @@ nav ul li a:hover {
 .events-section {
   padding: 2rem;
   text-align: left;
+  margin-left: 110px;
 }
 
 .events-section h2 {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #000;
+  /* border-bottom: 2px solid #000; */
   display: inline-block;
 }
+.event-line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.event-line hr{
+    border: none;
+    height: 2px;
+    background-color: #1A237E;
+    width: 1000px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.events-section h2 {
+  font-size: 1rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 56px;
+    margin-bottom: 1rem;
+}
+
 
 .events-container {
   display: flex; /* Use flexbox to align cards horizontally */
@@ -740,7 +770,7 @@ nav ul li a:hover {
 .event-card:hover .event-arrow span {
   transform: translateX(5px);
 }
-
+/*footer style*/
 
 .footer {
   background-color: #f7f7fc;

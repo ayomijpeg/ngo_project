@@ -192,6 +192,34 @@ button:hover {
   .social-icons a:hover {
     color: #6c5ce7;
   } 
+  /*Map styles*/
+  /* Map Section Styling */
+.map-section {
+  padding: 10px 0; /* Adds space above and below */
+  display: flex;
+  justify-content: center; /* Centers the map */
+  align-items: center; 
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+/* Map Wrapper */
+.map-wrapper {
+  width: 100%;
+  max-width: 1500px; /* Adjust width to match your image */
+  height: 450px; /* Adjusted height */
+  border-radius: 10px; /* Smooth corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+  overflow: hidden;
+}
+
+/* Iframe Styling */
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
   /*footer stlyes*/
 .footer {
 background-color: #f7f7fc;
