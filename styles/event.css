@@ -126,8 +126,7 @@
   }
   
   .events-container {
-    display: block; /* Use flexbox to align cards horizontally */
-
+    display: block; 
   }
   
   .event-card {
@@ -141,7 +140,7 @@
     height: 100px;
     margin:20px;
     margin-left: 354px;
-    width: 501px; /* Fixed width for each card */
+    width: 501px; 
     transition: transform 0.3s;
   }
   

@@ -1,4 +1,16 @@
 /* General Reset */
+@keyframes dropIn {
+  from {
+    transform: translate(-50%, -60%); /* Start a bit higher */
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%); /* Final position (already in your .hero-container) */
+    opacity: 1;
+  }
+}
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,7 +22,7 @@ body {
 .hero-section {
      background: url('/img/BG\ Image.png') no-repeat center center/cover; 
     height: 100vh;
-    color: bla;
+    color: black;
     position: relative;
 }
 
@@ -39,7 +51,7 @@ body {
 }
 
 .navbar ul li a {
-    color: white;
+  color: rgb(247, 234, 234);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
@@ -48,6 +60,12 @@ body {
 .navbar ul li a:hover {
     color: #ddd;
 }
+
+.navbar ul li a.active {
+  font-weight: bold;
+}
+
+
 
 .donate-btn {
     background: #6a0dad;
@@ -63,14 +81,13 @@ body {
 }
 
 .hero-container {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    /* transform: translateY(-50px); */
-    animation: dropIn 0.8s ease-out forwards;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: dropIn 1s ease-in-out forwards; /* Apply the animation */
 }
 
 .hero-container h1 {
@@ -84,7 +101,7 @@ body {
     font-size: 1.2rem;
     margin: 0 auto 2rem;
     max-width: 600px;
-    color: #f0f0f0; /* Subtle contrast for better visibility */
+    color: #f0f0f0; 
 }
 
 .hero-actions {
@@ -407,14 +424,14 @@ body {
     color: #333;
     margin: 0 auto;
     line-height: 1.5;
-    max-width: 700px; /* Constrains long text for better readability */
+    max-width: 700px; 
   }
   
   .projects-cards {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap; /* Ensures the cards wrap on smaller screens */
+    flex-wrap: wrap; 
   }
   
   .project-card {
@@ -425,10 +442,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
-    height: 400px; /* Adjust card height as needed */
+    height: 400px; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align content to the bottom of the card */
+    justify-content: flex-end; 
     transition: transform 0.3s;
     position: relative;
   }
@@ -437,19 +454,19 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for text readability */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
   }
   
   .project-card:hover {
-    transform: scale(1.05); /* Subtle zoom effect on hover */
+    transform: scale(1.05); 
   }
   
   .project-content {
     position: relative;
-    z-index: 2; /* Ensure content is above the overlay */
+    z-index: 2; 
     padding: 1.5rem;
-    color: white; /* White text for contrast */
+    color: white; 
     text-align: left;
   }
   
@@ -551,7 +568,7 @@ body {
 /*Cta section*/
 .cta-section {
   position: relative;
-  background-image: url('/img/volunteer.png'); /* Replace with the actual image path */
+  background-image: url('/img/volunteer.png'); 
   background-size: cover;
   background-position: center;
   height: 280px;
@@ -719,7 +736,7 @@ body {
 }
 
 .events-container {
-  display: flex; /* Use flexbox to align cards horizontally */
+  display: flex; 
   gap: 1rem; /* Spacing between cards */
 }
 
@@ -732,7 +749,7 @@ body {
   justify-content: space-between;
   padding: 1rem;
   height: 100px;
-  width: 501px; /* Fixed width for each card */
+  width: 501px; 
   transition: transform 0.3s;
 }
 

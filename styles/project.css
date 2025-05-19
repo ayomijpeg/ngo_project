@@ -153,14 +153,14 @@ font-family: 'Roboto', sans-serif;
 
 @media (max-width: 768px) {
     .stats-container {
-        grid-template-columns: 1fr; /* Stack in small screens */
+        grid-template-columns: 1fr; 
     }
 }
 
 /*Cta section*/
 .cta-section {
     position: relative;
-    background-image: url('/img/volunteer.png'); /* Replace with the actual image path */
+    background-image: url('/img/volunteer.png'); 
     background-size: cover;
     background-position: center;
     height: 280px;
@@ -260,7 +260,7 @@ font-family: 'Roboto', sans-serif;
   }
   
   .events-container {
-    display: flex; /* Use flexbox to align cards horizontally */
+    display: flex; 
     gap: 1rem; /* Spacing between cards */
   }
   
@@ -273,7 +273,7 @@ font-family: 'Roboto', sans-serif;
     justify-content: space-between;
     padding: 1rem;
     height: 100px;
-    width: 501px; /* Fixed width for each card */
+    width: 501px; 
     transition: transform 0.3s;
   }
   
